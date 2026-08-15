@@ -1,0 +1,73 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "DevmasterTrainingManagement.ConsoleUI/1.0.0": {
+        "dependencies": {
+          "DevmasterTrainingManagement.Application": "1.0.0",
+          "DevmasterTrainingManagement.Domain": "1.0.0",
+          "DevmasterTrainingManagement.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "DevmasterTrainingManagement.ConsoleUI.dll": {}
+        }
+      },
+      "DevmasterTrainingManagement.Application/1.0.0": {
+        "dependencies": {
+          "DevmasterTrainingManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DevmasterTrainingManagement.Application.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DevmasterTrainingManagement.Domain/1.0.0": {
+        "runtime": {
+          "DevmasterTrainingManagement.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "DevmasterTrainingManagement.Infrastructure/1.0.0": {
+        "dependencies": {
+          "DevmasterTrainingManagement.Domain": "1.0.0"
+        },
+        "runtime": {
+          "DevmasterTrainingManagement.Infrastructure.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DevmasterTrainingManagement.ConsoleUI/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevmasterTrainingManagement.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevmasterTrainingManagement.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DevmasterTrainingManagement.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,14 @@
+D:\CNTT2\THNLesson01\THNLesson01\bin\Debug\net10.0\THNLesson01.exe
+D:\CNTT2\THNLesson01\THNLesson01\bin\Debug\net10.0\THNLesson01.deps.json
+D:\CNTT2\THNLesson01\THNLesson01\bin\Debug\net10.0\THNLesson01.runtimeconfig.json
+D:\CNTT2\THNLesson01\THNLesson01\bin\Debug\net10.0\THNLesson01.dll
+D:\CNTT2\THNLesson01\THNLesson01\bin\Debug\net10.0\THNLesson01.pdb
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\THNLesson01.GeneratedMSBuildEditorConfig.editorconfig
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\THNLesson01.AssemblyInfoInputs.cache
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\THNLesson01.AssemblyInfo.cs
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\THNLesson01.csproj.CoreCompileInputs.cache
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\THNLesson01.dll
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\refint\THNLesson01.dll
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\THNLesson01.pdb
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\THNLesson01.genruntimeconfig.cache
+D:\CNTT2\THNLesson01\THNLesson01\obj\Debug\net10.0\ref\THNLesson01.dll

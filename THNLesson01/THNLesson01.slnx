@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="DevmasterTrainingManagement.Application/DevmasterTrainingManagement.Application.csproj" />
+  <Project Path="DevmasterTrainingManagement.ConsoleUI/DevmasterTrainingManagement.ConsoleUI.csproj" />
+  <Project Path="DevmasterTrainingManagement.Domain/DevmasterTrainingManagement.Domain.csproj" />
+  <Project Path="DevmasterTrainingManagement.Infrastructure/DevmasterTrainingManagement.Infrastructure.csproj" />
+</Solution>

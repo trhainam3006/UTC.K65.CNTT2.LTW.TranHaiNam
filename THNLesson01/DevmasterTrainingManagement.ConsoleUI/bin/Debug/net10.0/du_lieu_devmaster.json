@@ -1,0 +1,34 @@
+{
+  "DanhSachKhoaHoc": [
+    {
+      "MaKhoaHoc": "123",
+      "TenKhoaHoc": "2",
+      "HocPhi": 3,
+      "ThoiLuongGiangDay": 2,
+      "MoTa": "",
+      "TrangThaiActive": true
+    },
+    {
+      "MaKhoaHoc": "30033304",
+      "TenKhoaHoc": "Khoa Hoc",
+      "HocPhi": 200,
+      "ThoiLuongGiangDay": 10,
+      "MoTa": "",
+      "TrangThaiActive": true
+    }
+  ],
+  "DanhSachLopHoc": [],
+  "DanhSachHocVien": [
+    {
+      "MaHocVien": "123",
+      "HoTen": "3",
+      "NgaySinh": "0001-01-01T00:00:00",
+      "SoDienThoai": "4",
+      "Email": "2",
+      "DiaChi": "",
+      "NgayDangKy": "2026-08-15T14:04:09.4852089+07:00"
+    }
+  ],
+  "DanhSachDangKy": [],
+  "DanhSachChamSoc": []
+}

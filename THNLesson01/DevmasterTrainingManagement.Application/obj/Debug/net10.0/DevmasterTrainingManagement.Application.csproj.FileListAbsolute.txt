@@ -1,0 +1,15 @@
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\bin\Debug\net10.0\DevmasterTrainingManagement.Application.deps.json
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\bin\Debug\net10.0\DevmasterTrainingManagement.Application.dll
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\bin\Debug\net10.0\DevmasterTrainingManagement.Application.pdb
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\bin\Debug\net10.0\DevmasterTrainingManagement.Domain.dll
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\bin\Debug\net10.0\DevmasterTrainingManagement.Domain.pdb
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\DevmasterTrainingManagement.Application.csproj.AssemblyReference.cache
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\DevmasterTrainingManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\DevmasterTrainingManagement.Application.AssemblyInfoInputs.cache
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\DevmasterTrainingManagement.Application.AssemblyInfo.cs
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\DevmasterTrainingManagement.Application.csproj.CoreCompileInputs.cache
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\Devmaste.11A49814.Up2Date
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\DevmasterTrainingManagement.Application.dll
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\refint\DevmasterTrainingManagement.Application.dll
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\DevmasterTrainingManagement.Application.pdb
+D:\CNTT2\THNLesson01\DevmasterTrainingManagement.Application\obj\Debug\net10.0\ref\DevmasterTrainingManagement.Application.dll

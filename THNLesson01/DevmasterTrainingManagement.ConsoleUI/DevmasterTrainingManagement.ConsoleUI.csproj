@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <OutputType>Exe</OutputType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DevmasterTrainingManagement.Application\DevmasterTrainingManagement.Application.csproj" />
+    <ProjectReference Include="..\DevmasterTrainingManagement.Domain\DevmasterTrainingManagement.Domain.csproj" />
+    <ProjectReference Include="..\DevmasterTrainingManagement.Infrastructure\DevmasterTrainingManagement.Infrastructure.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+</Project>
