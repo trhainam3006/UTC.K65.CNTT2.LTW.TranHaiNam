@@ -1,0 +1,37 @@
+﻿@model IEnumerable<Lab2_LTW_CNTT2K65.Models.Product>
+
+@{
+    ViewData["Title"] = "Quản lý sản phẩm";
+}
+
+<h2 class="my-4 text-secondary">Quản lý sản phẩm</h2>
+
+<table class="table align-middle">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Created At</th>
+            <th class="text-center">Image</th>
+            <th class="text-end">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@string.Format("{0:N0} đ", item.Price)</td>
+                <td>@item.CreatedAt</td>
+                <td class="text-center">
+                    <img src="~/images/@item.ImageUrl" alt="@item.Name" style="width: 50px; height: 50px; object-fit: contain;" />
+                </td>
+                <td class="text-end">
+                    <a href="#" class="btn btn-success btn-sm px-3">View</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

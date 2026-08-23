@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<!-- 1. Banner / Carousel (Microsoft Azure) -->
+<div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner bg-primary text-white p-5 rounded text-center" style="background-color: #0b3c5d !important;">
+        <div class="carousel-item active">
+            <h1 class="display-4 fw-normal">Microsoft Azure</h1>
+            <p class="lead my-4">Learn how Microsoft's Azure cloud platform allows you to build, deploy, and scale web apps. <a href="#" class="btn btn-light btn-sm ms-2">Learn More</a></p>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!-- 2. Danh sách sản phẩm -->
+<div class="container fs-4 my-3 text-start">
+    <h3 class="fw-normal text-secondary">Danh sách sản phẩm</h3>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 g-4 text-center">
+    <!-- Sản phẩm 1 -->
+    <div class="col">
+        <div class="card h-100 shadow-sm border">
+            <div class="p-3">
+                <img src="~/images/product1.jpg" class="card-img-top img-fluid" alt="Product Name 1" style="max-height: 200px; object-fit: contain;">
+            </div>
+            <div class="card-body border-top">
+                <p class="card-text mb-0 text-muted">Product Name 1</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sản phẩm 2 -->
+    <div class="col">
+        <div class="card h-100 shadow-sm border">
+            <div class="p-3">
+                <img src="~/images/product2.jpg" class="card-img-top img-fluid" alt="Product Name 2" style="max-height: 200px; object-fit: contain;">
+            </div>
+            <div class="card-body border-top">
+                <p class="card-text mb-0 text-muted">Product Name 2</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sản phẩm 3 -->
+    <div class="col">
+        <div class="card h-100 shadow-sm border">
+            <div class="p-3">
+                <img src="~/images/product3.jpg" class="card-img-top img-fluid" alt="Product Name 3" style="max-height: 200px; object-fit: contain;">
+            </div>
+            <div class="card-body border-top">
+                <p class="card-text mb-0 text-muted">Product Name 3</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sản phẩm 4 -->
+    <div class="col">
+        <div class="card h-100 shadow-sm border">
+            <div class="p-3">
+                <img src="~/images/product4.jpg" class="card-img-top img-fluid" alt="Product Name 4" style="max-height: 200px; object-fit: contain;">
+            </div>
+            <div class="card-body border-top">
+                <p class="card-text mb-0 text-muted">Product Name 4</p>
+            </div>
+        </div>
+    </div>
+</div>
