@@ -1,0 +1,37 @@
+@{
+    ViewData["Title"] = "Trang chủ";
+}
+
+<div class="p-5 mb-4 bg-light rounded-3 border">
+    <div class="container-fluid py-3">
+        <h1 class="display-5 fw-bold text-primary">Bài thực hành 02 - ASP.NET Core MVC</h1>
+        <p class="col-md-10 fs-5 text-muted">
+            Tạo Controller, truyền dữ liệu qua View thông qua ViewData, ViewBag, cấu hình đặt tên Route cho Action và liên kết thẻ &lt;a&gt;.
+        </p>
+        <div class="d-flex gap-3 mt-4">
+            <a asp-route="account" class="btn btn-primary btn-lg px-4">
+                Bài 1: Danh sách Account
+            </a>
+            <a href="/san-pham" class="btn btn-success btn-lg px-4">
+                Bài tự làm: Quản lý Sản phẩm
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row align-items-md-stretch">
+    <div class="col-md-6 mb-4">
+        <div class="h-100 p-4 text-white bg-dark rounded-3 shadow-sm">
+            <h3>Bài 1: Quản lý Account</h3>
+            <p>Hiển thị danh sách tài khoản dưới dạng Thumbnail card và trang Profile chi tiết với route tùy biến <code>/ho-so-cua-toi?id=...</code></p>
+            <a asp-route="account" class="btn btn-outline-light">Truy cập Account</a>
+        </div>
+    </div>
+    <div class="col-md-6 mb-4">
+        <div class="h-100 p-4 bg-light border rounded-3 shadow-sm">
+            <h3>Bài 2 (Tự làm): Quản lý Sản phẩm</h3>
+            <p>Hiển thị danh mục bên trái, lưới sản phẩm bên phải với route <code>/san-pham</code>, lọc theo danh mục và xem chi tiết theo Id <code>/san-pham/chi-tiet?id=...</code></p>
+            <a href="/san-pham" class="btn btn-outline-success">Truy cập Sản phẩm</a>
+        </div>
+    </div>
+</div>

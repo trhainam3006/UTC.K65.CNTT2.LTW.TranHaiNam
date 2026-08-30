@@ -1,0 +1,60 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  background-color: #fcfcfc;
+  color: #333;
+}
+
+.thumbnail {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+.thumbnail:hover {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.btn-success {
+  background-color: #5cb85c;
+  border-color: #4cae4c;
+}
+
+.btn-success:hover {
+  background-color: #449d44;
+  border-color: #398439;
+}
+
+.btn-danger {
+  background-color: #d9534f;
+  border-color: #d43f3a;
+}
+
+.list-group-item.active {
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+
+.card {
+  border-radius: 4px;
+}

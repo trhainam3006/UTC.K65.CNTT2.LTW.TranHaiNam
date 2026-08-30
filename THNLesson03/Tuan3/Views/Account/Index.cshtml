@@ -1,0 +1,25 @@
+@{
+    ViewData["Title"] = "Index";
+    var accounts = ViewBag.Accounts as List<Tuan3.Models.Account> ?? ViewBag.accounts as List<Tuan3.Models.Account>;
+}
+
+<div class="row">
+    @if (accounts != null)
+    {
+        @foreach (var item in accounts)
+        {
+            <div class="col-md-4 mb-4">
+                <div class="thumbnail card h-100 p-2 text-start shadow-sm border">
+                    <img src="@item.Avatar" alt="@item.Name" class="card-img-top" style="width:100%; height:260px; object-fit:cover;" />
+                    <div class="caption card-body px-0">
+                        <h3 class="card-title fw-bold fs-4">@item.Name</h3>
+                        <p class="card-text text-muted mb-3">@item.Bio</p>
+                        <p class="mb-0">
+                            <a asp-route="profile" asp-route-id="@item.Id" class="btn btn-success btn-block px-3 py-1">Profile</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    }
+</div>

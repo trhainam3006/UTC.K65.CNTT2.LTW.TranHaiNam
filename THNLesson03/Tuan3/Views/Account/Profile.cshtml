@@ -1,0 +1,43 @@
+@{
+    ViewData["Title"] = "Profile";
+    var account = ViewBag.account as Tuan3.Models.Account;
+}
+
+<div class="py-2">
+    <h2 class="mb-4">Your Profile</h2>
+    @if (account != null)
+    {
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <img src="@account.Avatar" alt="@account.Name" class="img-fluid rounded shadow-sm" style="width:100%; max-height:420px; object-fit:cover;" />
+            </div>
+            <div class="col-md-8">
+                <h2 class="fw-bold mb-3">Full Name: @account.Name</h2>
+                <h4 class="mb-2">Email: @account.Email</h4>
+                <h4 class="mb-2">Phone: @account.Phone</h4>
+                <h4 class="mb-2">Address: @account.Address</h4>
+                <h4 class="mb-2">Bio: @account.Bio</h4>
+                <h4 class="mb-2">
+                    Gender: 
+                    @if (account.Gender == 1)
+                    {
+                        <span>Male</span>
+                    }
+                    else
+                    {
+                        <span>Female</span>
+                    }
+                </h4>
+                <h4 class="mb-4">Birthday: @account.Birthday.ToString("M/d/yyyy hh:mm:ss tt")</h4>
+                <p>
+                    <a asp-controller="Account" asp-action="Index" class="btn btn-danger px-3 py-1">Back to list</a>
+                </p>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-warning">Không tìm thấy thông tin tài khoản.</div>
+        <a asp-controller="Account" asp-action="Index" class="btn btn-danger">Back to list</a>
+    }
+</div>

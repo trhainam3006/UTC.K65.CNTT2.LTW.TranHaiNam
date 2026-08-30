@@ -1,0 +1,63 @@
+@model IEnumerable<Tuan3.Models.Product>
+@{
+    ViewData["Title"] = "Sản phẩm";
+    var categories = ViewBag.Categories as List<Tuan3.Models.Category> ?? new List<Tuan3.Models.Category>();
+    int? selectedCatId = ViewBag.SelectedCategoryId as int?;
+}
+
+<div class="row">
+    <div class="col-md-3 mb-4">
+        <h5 class="fw-bold text-uppercase border-bottom pb-2 mb-3">DANH MỤC</h5>
+        <div class="list-group shadow-sm">
+            <a href="/san-pham" class="list-group-item list-group-item-action @(selectedCatId == null ? "active bg-primary text-white" : "")">
+                Tất cả sản phẩm
+            </a>
+            @foreach (var cat in categories)
+            {
+                <a href="/san-pham?categoryId=@cat.Id" 
+                   class="list-group-item list-group-item-action @(selectedCatId == cat.Id ? "active bg-primary text-white" : "")">
+                    @cat.Name
+                </a>
+            }
+        </div>
+    </div>
+
+    <div class="col-md-9">
+        <h3 class="fw-bold mb-4">Danh sách sản phẩm</h3>
+        
+        @if (Model != null && Model.Any())
+        {
+            <div class="row">
+                @foreach (var item in Model)
+                {
+                    <div class="col-md-4 col-sm-6 mb-4">
+                        <div class="card h-100 border shadow-sm p-2 text-center">
+                            <div class="img-wrapper mb-2" style="height: 200px; display: flex; align-items: center; justify-content: center; overflow: hidden;">
+                                <img src="@item.Image" alt="@item.Name" style="max-height: 100%; max-width: 100%; object-fit: contain;" />
+                            </div>
+                            <div class="card-body p-2 d-flex flex-column justify-content-between">
+                                <h6 class="card-title text-start fw-bold text-dark mb-2" style="min-height: 40px;">@item.Name</h6>
+                                
+                                <div class="price-box text-start mb-2 small">
+                                    <span class="text-muted text-decoration-line-through">Giá: @item.Price.ToString("N0")</span>
+                                    <span class="text-danger fw-bold ms-1">Giá: @item.SalePrice.ToString("N0")</span>
+                                </div>
+                                
+                                <div class="text-start mt-auto">
+                                    <a href="/san-pham/chi-tiet?id=@item.Id" 
+                                       class="btn btn-success btn-sm w-100 py-1" style="background-color: #4cae4c; border-color: #4cae4c;">
+                                        Chi tiết
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+        else
+        {
+            <div class="alert alert-info">Chưa có sản phẩm nào trong danh mục này.</div>
+        }
+    </div>
+</div>
