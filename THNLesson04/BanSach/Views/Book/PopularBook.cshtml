@@ -1,0 +1,13 @@
+﻿@model IEnumerable<BanSach.Models.Book>
+
+<div style="display: flex; flex-wrap: wrap; gap: 15px;">
+    @foreach (var item in Model)
+    {
+        <div style="width: 220px; border: 1px solid #ddd; border-radius: 4px; padding: 10px;">
+            <img src="@item.Image" alt="@item.Title"
+                 style="width: 100%; height: 260px; object-fit: cover; border-radius: 4px;" />
+            <h3 style="font-size: 16px; margin: 8px 0 4px;">@item.Title</h3>
+            <p style="margin: 0; color: #555;">Price: @item.Price</p>
+        </div>
+    }
+</div>
