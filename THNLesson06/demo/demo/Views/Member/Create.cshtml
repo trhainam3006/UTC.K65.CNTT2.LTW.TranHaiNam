@@ -1,0 +1,37 @@
+﻿@model demo.Models.ViewModels.RegisterViewModels;
+<h2>Đăng kí thành viên</h2>
+<div class="row">
+    <div class="col-row-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"> </div>
+            <div class="form-group">
+                <label asp-for="userName" class="control-lable"></label>
+                <input asp-for="userName" class="form-control"/>
+                <span asp-validation-for="userName"class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="userPassWord" class="control-lable"></label>
+                <input asp-for="userPassWord" class="form-control" />
+                <span asp-validation-for="userPassWord" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="userEmail" class="control-lable"></label>
+                <input asp-for="userEmail" class="form-control" />
+                <span asp-validation-for="userEmail" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="userPhone" class="control-lable"></label>
+                <input asp-for="userPhone" class="form-control" />
+                <span asp-validation-for="userPhone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Birthday" class="control-lable"></label>
+                <input asp-for="Birthday" type="date" class="form-control" />
+                <span asp-validation-for="Birthday" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input  type="submit" value="Lưu" class="btn btn-primary"/>
+            </div>
+        </form>
+    </div>
+</div>
