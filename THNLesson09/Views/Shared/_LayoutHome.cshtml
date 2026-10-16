@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <link rel="stylesheet" href="~/css/LayoutHome.css" asp-append-version="true" />
+</head>
+<body>
+    <div id="wrapper">
+        <div id="navbar">
+            <ul>
+                <li><a href="/Products/Index">Danh sách sản phẩm</a></li>
+                <li><a href="/Products/Search">Tìm kiếm sản phẩm</a></li>
+                <li><a href="/Products/Hots">Danh sách bán chạy</a></li>
+                <li><a href="/Products/About">Giới thiệu</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            @RenderBody()
+        </div>
+        <div class="footer">
+            <p>Copyright &copy; 2026 By hoangthuhang</p>
+        </div>
+    </div>
+    <script src="~/js/LayoutHome.js"></script>
+    <script src="/lib/jquery/dist/jquery.js"></script>
+</body>
+</html>
