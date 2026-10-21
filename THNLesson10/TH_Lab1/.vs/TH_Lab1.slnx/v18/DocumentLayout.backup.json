@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|c:\\users\\hnamt\\source\\repos\\th_lab1\\th_lab1\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|solutionrelative:th_lab1\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|c:\\users\\hnamt\\source\\repos\\th_lab1\\th_lab1\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|solutionrelative:th_lab1\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|c:\\users\\hnamt\\source\\repos\\th_lab1\\th_lab1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|solutionrelative:th_lab1\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|c:\\users\\hnamt\\source\\repos\\th_lab1\\th_lab1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|solutionrelative:th_lab1\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|c:\\users\\hnamt\\source\\repos\\th_lab1\\th_lab1\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|solutionrelative:th_lab1\\models\\branch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|c:\\users\\hnamt\\source\\repos\\th_lab1\\th_lab1\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AF875FD5-865C-448C-A79F-AC2856FEBB27}|TH_Lab1\\TH_Lab1.csproj|solutionrelative:th_lab1\\models\\gender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Views\\Student\\Create.cshtml",
+              "RelativeDocumentMoniker": "TH_Lab1\\Views\\Student\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Views\\Student\\Create.cshtml",
+              "RelativeToolTip": "TH_Lab1\\Views\\Student\\Create.cshtml",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAqwEsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-21T01:09:52.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "TH_Lab1\\Views\\Student\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "TH_Lab1\\Views\\Student\\Index.cshtml",
+              "ViewState": "AgIAABoAAAAAAAAAAAAAADcAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-10-21T01:09:24.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "TH_Lab1\\Controllers\\StudentController.cs",
+              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Controllers\\StudentController.cs*",
+              "RelativeToolTip": "TH_Lab1\\Controllers\\StudentController.cs*",
+              "ViewState": "AgIAABkAAAAAAAAAAAA8wDUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T01:07:10.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Models\\Student.cs",
+              "RelativeDocumentMoniker": "TH_Lab1\\Models\\Student.cs",
+              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Models\\Student.cs*",
+              "RelativeToolTip": "TH_Lab1\\Models\\Student.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T01:06:28.368Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Branch.cs",
+              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Models\\Branch.cs",
+              "RelativeDocumentMoniker": "TH_Lab1\\Models\\Branch.cs",
+              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Models\\Branch.cs",
+              "RelativeToolTip": "TH_Lab1\\Models\\Branch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T01:06:05.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Gender.cs",
+              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Models\\Gender.cs",
+              "RelativeDocumentMoniker": "TH_Lab1\\Models\\Gender.cs",
+              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab1\\TH_Lab1\\Models\\Gender.cs",
+              "RelativeToolTip": "TH_Lab1\\Models\\Gender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-21T01:05:19.152Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+﻿@model IEnumerable<TH_Lab1.Models.Student>
+
+<div class="container mt-4">
+    <!-- Nút bấm chuyển sang trang tạo mới theo Route Name -->
+    <a asp-route="StudentAdd" class="btn btn-primary">Create Student</a>
+
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Mã</th>
+                <th>Họ tên</th>
+                <th>Ngày sinh</th>
+                <th>Ngành</th>
+                <th>Giới tính</th>
+                <th>Hệ ĐT</th>
+                <th>Địa chỉ</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var s in Model)
+            {
+                <tr>
+                    <td>@s.Id</td>
+                    <td>@s.Name</td>
+                    <td>@s.DateOfBorth</td>
+                    <td>
+                        @{
+                            string str = "";
+                            switch (s.Branch)
+                            {
+                                case TH_Lab1.Models.Branch.IT:
+                                    str = "CNTT";
+                                    break;
+                                case TH_Lab1.Models.Branch.BE:
+                                    str = "Kinh tế";
+                                    break;
+                                case TH_Lab1.Models.Branch.CE:
+                                    str = "Công trình";
+                                    break;
+                                case TH_Lab1.Models.Branch.EE:
+                                    str = "Điện - Điện tử";
+                                    break;
+                            }
+                        }
+                        @str
+                    </td>
+                    <td>@(s.Gender == TH_Lab1.Models.Gender.Male ? "Nam" : "Nữ")</td>
+                    <td>@(s.IsRegular ? "Chính quy" : "Phi chính quy")</td>
+                    <td>@s.Address</td>
+                    <td>@s.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
