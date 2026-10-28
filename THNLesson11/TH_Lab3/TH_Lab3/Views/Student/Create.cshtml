@@ -1,0 +1,119 @@
+﻿@model TH_Lab3.Models.Student
+
+@{
+    ViewData["Title"] = "Thêm sinh viên";
+}
+
+<h2>THÊM SINH VIÊN</h2>
+
+<div class="container mt-4">
+
+    <div asp-validation-summary="All"
+         class="text-danger"></div>
+
+    <form asp-controller="Student"
+          asp-action="Create"
+          method="post">
+
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control"
+                   placeholder="Họ tên" />
+            <span asp-validation-for="Name"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label"></label>
+            <input asp-for="Email" class="form-control"
+                   placeholder="Email" />
+            <span asp-validation-for="Email"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Password" class="form-label"></label>
+            <input asp-for="Password" class="form-control"
+                   placeholder="Mật khẩu" />
+            <span asp-validation-for="Password"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Branch" class="form-label"></label>
+            <select asp-for="Branch"
+                    asp-items="ViewBag.AllBranches"
+                    class="form-select">
+                <option value="">-- Chọn ngành --</option>
+            </select>
+            <span asp-validation-for="Branch"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Gender" class="form-label"></label>
+            <div>
+                @foreach (var gender in ViewBag.AllGenders)
+                {
+                    <label class="me-3">
+                        <input type="radio"
+                               asp-for="Gender"
+                               value="@gender" />
+                        @gender
+                    </label>
+                }
+            </div>
+            <span asp-validation-for="Gender"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">
+                <input asp-for="IsRegular"
+                       type="checkbox" />
+                Hệ chính quy
+            </label>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Address" class="form-label"></label>
+            <textarea asp-for="Address"
+                      class="form-control"
+                      placeholder="Địa chỉ"></textarea>
+            <span asp-validation-for="Address"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DateOfBirth" class="form-label"></label>
+            <input asp-for="DateOfBirth"
+                   type="date"
+                   class="form-control" />
+            <span asp-validation-for="DateOfBirth"
+                  class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Score" class="form-label"></label>
+            <input asp-for="Score"
+                   type="number"
+                   step="any"
+                   class="form-control" />
+            <span asp-validation-for="Score"
+                  class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">
+            Create
+        </button>
+
+        <a asp-action="Index" class="btn btn-secondary">
+            Quay lại
+        </a>
+
+    </form>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
