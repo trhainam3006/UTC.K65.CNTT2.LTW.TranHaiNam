@@ -1,0 +1,18 @@
+@model IEnumerable<TH_Lab5.Models.Student>
+@{
+    ViewData["Title"] = "Validation Lab3";
+}
+<div class="page-title-row"><div><h1>Validation – Lab3</h1><p class="subtitle">Bài kiểm tra Annotation: Name, Email, Password, DateOfBirth, Score.</p></div></div>
+<div class="panel"><div class="panel-inner">
+    <p class="notice">Module Lab3 lưu dữ liệu <strong>tạm trong bộ nhớ</strong>, không ghi vào SQL Server và không lưu mật khẩu.</p>
+    <div class="table-scroll"><table class="table table-striped"><thead><tr>
+        <th>Mã</th><th>Họ tên</th><th>Email</th><th>Ngành</th><th>Giới tính</th><th>Điểm</th>
+    </tr></thead><tbody>
+    @foreach (var s in Model)
+    {
+        <tr><td>@s.Id</td><td>@s.Name</td><td>@s.Email</td><td>@s.Branch</td><td>@s.Gender</td><td>@s.Score</td></tr>
+    }
+    @if (!Model.Any()) { <tr><td colspan="6" class="empty-state">Chưa có sinh viên. Nhấn "Thêm sinh viên" để thử Validation.</td></tr> }
+    </tbody></table></div>
+    <a asp-action="Create" class="btn btn-primary add-btn">Thêm sinh viên (Lab3)</a>
+</div></div>

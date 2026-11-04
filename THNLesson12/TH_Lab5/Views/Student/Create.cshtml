@@ -1,0 +1,32 @@
+@model TH_Lab5.Models.Student
+@{
+    ViewData["Title"] = "Thêm sinh viên – Lab3";
+}
+<div class="page-title-row"><div><h1>Thêm sinh viên – Validation</h1><p class="subtitle">Kiểm tra đầy đủ các Data Annotation trong bài Lab3.</p></div></div>
+<div class="panel form-panel">
+    <form asp-controller="Student" asp-action="Create" method="post">
+        <div asp-validation-summary="All" class="validation-summary text-danger"></div>
+        <div class="form-group"><label asp-for="Name"></label><input asp-for="Name" class="form-control" placeholder="Họ tên từ 4 đến 100 ký tự" />
+            <span asp-validation-for="Name" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="Email"></label><input asp-for="Email" class="form-control" placeholder="ten@gmail.com" />
+            <span asp-validation-for="Email" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="Password"></label><input asp-for="Password" class="form-control" placeholder="Ví dụ: Nam@123456" />
+            <span asp-validation-for="Password" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="Branch"></label><select asp-for="Branch" asp-items="ViewBag.AllBranches" class="form-control"><option value="">-- Chọn ngành --</option></select>
+            <span asp-validation-for="Branch" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="Gender"></label><div class="radio-row">
+            @foreach (Gender g in ViewBag.AllGenders)
+            {
+                <label class="radio-label"><input asp-for="Gender" type="radio" value="@g" /> @g</label>
+            }
+            </div><span asp-validation-for="Gender" class="text-danger"></span></div>
+        <div class="form-group check-row"><label><input asp-for="IsRegular" type="checkbox" /> Hệ chính quy</label></div>
+        <div class="form-group"><label asp-for="Address"></label><textarea asp-for="Address" class="form-control" rows="3"></textarea>
+            <span asp-validation-for="Address" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="DateOfBirth"></label><input asp-for="DateOfBirth" type="date" class="form-control" />
+            <span asp-validation-for="DateOfBirth" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="Score"></label><input asp-for="Score" type="number" step="any" class="form-control" placeholder="0–10" />
+            <span asp-validation-for="Score" class="text-danger"></span></div>
+        <div class="button-row"><button type="submit" class="btn btn-primary">Create</button><a asp-action="Index" class="btn btn-outline">Quay lại</a></div>
+    </form>
+</div>

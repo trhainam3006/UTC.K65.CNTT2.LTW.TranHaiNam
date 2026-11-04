@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\TH_Lab3.csproj",
+      "projectUniqueName": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\TH_Lab3.csproj",
       "projectName": "TH_Lab3",
-      "projectPath": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\TH_Lab3.csproj",
+      "projectPath": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\TH_Lab3.csproj",
       "packagesPath": "C:\\Users\\hnamt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\obj\\",
+      "outputPath": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

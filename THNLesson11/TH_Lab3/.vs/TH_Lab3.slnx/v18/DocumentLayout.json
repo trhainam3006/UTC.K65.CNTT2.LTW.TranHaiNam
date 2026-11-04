@@ -1,30 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\",
+  "WorkspaceRootPath": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|c:\\users\\hnamt\\source\\repos\\th_lab3\\th_lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|d:\\ltw\\utc.k65.cntt2.ltw.tranhainam\\thnlesson11\\th_lab3\\th_lab3\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|c:\\users\\hnamt\\source\\repos\\th_lab3\\th_lab3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|d:\\ltw\\utc.k65.cntt2.ltw.tranhainam\\thnlesson11\\th_lab3\\th_lab3\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|c:\\users\\hnamt\\source\\repos\\th_lab3\\th_lab3\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|d:\\ltw\\utc.k65.cntt2.ltw.tranhainam\\thnlesson11\\th_lab3\\th_lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|c:\\users\\hnamt\\source\\repos\\th_lab3\\th_lab3\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|d:\\ltw\\utc.k65.cntt2.ltw.tranhainam\\thnlesson11\\th_lab3\\th_lab3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|c:\\users\\hnamt\\source\\repos\\th_lab3\\th_lab3\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|d:\\ltw\\utc.k65.cntt2.ltw.tranhainam\\thnlesson11\\th_lab3\\th_lab3\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\views\\student\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|c:\\users\\hnamt\\source\\repos\\th_lab3\\th_lab3\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E399EEB1-40E9-40D4-B687-17DF65BCCA6D}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\models\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|d:\\ltw\\utc.k65.cntt2.ltw.tranhainam\\thnlesson11\\th_lab3\\th_lab3\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5D0E7D8-1D0B-D79B-A851-0EEFE8B2F677}|TH_Lab3\\TH_Lab3.csproj|solutionrelative:th_lab3\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,82 +34,79 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Program.cs",
+              "DocumentMoniker": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Program.cs",
               "RelativeDocumentMoniker": "TH_Lab3\\Program.cs",
-              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Program.cs",
+              "ToolTip": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Program.cs",
               "RelativeToolTip": "TH_Lab3\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAwBkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-28T00:53:36.152Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Views\\_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Views\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "TH_Lab3\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Views\\_ViewImports.cshtml",
               "RelativeToolTip": "TH_Lab3\\Views\\_ViewImports.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-28T00:53:27.109Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T00:53:27.109Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Views\\Student\\Index.cshtml",
+              "DocumentMoniker": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Views\\Student\\Index.cshtml",
               "RelativeDocumentMoniker": "TH_Lab3\\Views\\Student\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Views\\Student\\Index.cshtml",
               "RelativeToolTip": "TH_Lab3\\Views\\Student\\Index.cshtml",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAwCwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-10-28T00:53:14.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Views\\Student\\Create.cshtml",
+              "DocumentMoniker": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Views\\Student\\Create.cshtml",
               "RelativeDocumentMoniker": "TH_Lab3\\Views\\Student\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Views\\Student\\Create.cshtml",
+              "ToolTip": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Views\\Student\\Create.cshtml",
               "RelativeToolTip": "TH_Lab3\\Views\\Student\\Create.cshtml",
               "ViewState": "AgIAAGAAAAAAAAAAAAAcwHcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-10-28T00:52:52.253Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "StudentController.cs",
-              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Controllers\\StudentController.cs",
-              "RelativeDocumentMoniker": "TH_Lab3\\Controllers\\StudentController.cs",
-              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Controllers\\StudentController.cs",
-              "RelativeToolTip": "TH_Lab3\\Controllers\\StudentController.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-28T00:51:51.32Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-10-28T00:52:52.253Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "TH_Lab3\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "TH_Lab3\\Controllers\\StudentController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T00:51:51.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Models\\Student.cs",
+              "DocumentMoniker": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Models\\Student.cs",
               "RelativeDocumentMoniker": "TH_Lab3\\Models\\Student.cs",
-              "ToolTip": "C:\\Users\\hnamt\\source\\repos\\TH_Lab3\\TH_Lab3\\Models\\Student.cs",
+              "ToolTip": "D:\\LTW\\UTC.K65.CNTT2.LTW.TranHaiNam\\THNLesson11\\TH_Lab3\\TH_Lab3\\Models\\Student.cs",
               "RelativeToolTip": "TH_Lab3\\Models\\Student.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAxwE4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwE4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-28T00:51:04.99Z",
               "EditorCaption": ""

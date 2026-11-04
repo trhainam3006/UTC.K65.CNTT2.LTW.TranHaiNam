@@ -1,0 +1,31 @@
+@model IEnumerable<TH_Lab5.Models.Major>
+@{
+    bool ajaxMode = ViewData["AjaxMode"] is bool flag && flag;
+    int? selectedMajorId = ViewData["SelectedMajorID"] is int id ? id : null;
+}
+<ul id="majorFilters" class="major-list" aria-label="Chọn ngành học">
+    @if (ajaxMode)
+    {
+        <li class="nav-item major-item @(selectedMajorId == null ? "active" : "")" id="all" data-major-id="">
+            <a href="#" class="nav-link major-filter">Tất cả</a>
+        </li>
+        @foreach (var m in Model)
+        {
+            <li class="nav-item major-item @(selectedMajorId == m.MajorID ? "active" : "")" id="@m.MajorID" data-major-id="@m.MajorID">
+                <a href="#" class="nav-link major-filter">@m.MajorName</a>
+            </li>
+        }
+    }
+    else
+    {
+        <li class="nav-item @(selectedMajorId == null ? "active" : "")">
+            <a asp-controller="Learner" asp-action="Index" class="nav-link">Tất cả</a>
+        </li>
+        @foreach (var m in Model)
+        {
+            <li class="nav-item @(selectedMajorId == m.MajorID ? "active" : "")">
+                <a asp-controller="Learner" asp-action="Index" asp-route-mid="@m.MajorID" class="nav-link">@m.MajorName</a>
+            </li>
+        }
+    }
+</ul>

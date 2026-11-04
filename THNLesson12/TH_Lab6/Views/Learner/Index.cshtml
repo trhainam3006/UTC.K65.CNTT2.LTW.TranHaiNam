@@ -1,0 +1,62 @@
+@model IEnumerable<TH_Lab6.Models.Learner>
+@{
+    bool ajaxMode = ViewBag.AjaxMode is bool b && b;
+    int? mid = ViewBag.mid is int m ? m : null;
+    string keyword = ViewBag.keyword as string ?? "";
+    string actionName = ajaxMode ? "Index" : "Sync";
+    ViewData["Title"] = "Learner List — Lọc, tìm kiếm, phân trang";
+}
+<div id="lab6App" data-ajax-mode="@(ajaxMode ? "true" : "false")"
+     data-index-url="@Url.Action("Index", "Learner")"
+     data-filter-url="@Url.Action("LearnerFilter", "Learner")">
+    <div class="page-title-row">
+        <div>
+            <h1>Learner List</h1>
+            
+        </div>
+        
+    </div>
+
+    <div class="panel">
+        <div class="panel-inner">
+            <div class="mode-switch">
+                <a asp-controller="Learner" asp-action="Index" class="mode-link @(ajaxMode ? "active" : "")">AJAX</a>
+                <a asp-controller="Learner" asp-action="Sync" class="mode-link @(!ajaxMode ? "active" : "")">đồng bộ</a>
+            </div>
+
+            <h2 class="panel-heading">Chọn chuyên ngành (Major)</h2>
+            @await Component.InvokeAsync("Major", new { ajaxMode, selectedMajorId = mid, keyword })
+
+            <form id="searchForm" asp-controller="Learner" asp-action="@actionName"
+                  method="get" class="learner-search" role="search">
+                <input id="currentMajorId" name="mid" type="hidden" value="@mid" />
+                <label class="search-label" for="keyword">Tìm kiếm Learner</label>
+                <div class="search-input-wrap">
+                    <input type="search" id="keyword" name="keyword" value="@keyword"
+                           class="form-control" placeholder="Nhập họ hoặc tên..." autocomplete="off" />
+                    <button id="btnSearch" type="submit" class="btn btn-primary" aria-label="Tìm kiếm">
+                        Tìm kiếm
+                    </button>
+                </div>
+                <p class="search-help">Có thể kết hợp tìm kiếm với ngành và chuyển trang.</p>
+            </form>
+
+            <div id="filterStatus" class="table-meta" role="status" aria-live="polite">
+                @(ajaxMode ? "Chọn ngành, nhập tên hoặc bấm số trang để lọc bằng AJAX." : "Chế độ đồng bộ: mỗi thao tác sẽ tải lại trang.")
+            </div>
+
+            <div id="content" aria-live="polite">
+                <partial name="LearnerTable" model="Model" />
+            </div>
+
+            <a asp-controller="Learner" asp-action="Create" class="btn btn-primary add-btn">Create New Student</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @if (ajaxMode)
+    {
+        <script src="~/js/learner-filter.js" asp-append-version="true"></script>
+    }
+}

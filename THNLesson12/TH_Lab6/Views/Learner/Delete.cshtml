@@ -1,0 +1,20 @@
+@model TH_Lab6.Models.Learner
+@{
+    ViewData["Title"] = "Delete Learner";
+}
+<div class="page-title-row"><div><h1>Delete Learner</h1><p class="subtitle">Are you sure you want to delete this?</p></div></div>
+<div class="panel form-panel">
+    <h2 class="panel-heading">Learner #@Model.LearnerID</h2>
+    <dl class="info-grid">
+        <dt>First Mid Name</dt><dd>@Model.FirstMidName</dd>
+        <dt>Last Name</dt><dd>@Model.LastName</dd>
+        <dt>Major</dt><dd>@Model.Major?.MajorName</dd>
+        <dt>Enrollment Date</dt><dd>@Model.EnrollmentDate.ToString("dd/MM/yyyy")</dd>
+    </dl>
+    <div class="alert alert-warning">Chỉ xóa được người học chưa đăng ký môn học (không có Enrollment).</div>
+    <form asp-controller="Learner" asp-action="Delete" asp-route-id="@Model.LearnerID" method="post">
+        <input type="hidden" asp-for="LearnerID" />
+        <div class="button-row"><button class="btn btn-danger" type="submit">Delete</button>
+            <a asp-action="Index" class="btn btn-outline">Back to List</a></div>
+    </form>
+</div>

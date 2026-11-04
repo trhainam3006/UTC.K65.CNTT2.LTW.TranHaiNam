@@ -1,0 +1,76 @@
+@model IEnumerable<TH_Lab5.Models.Learner>
+@{
+    bool ajaxMode = ViewBag.AjaxMode is bool b && b;
+    int? selectedMajorId = ViewBag.SelectedMajorID is int id ? id : null;
+    ViewData["Title"] = ajaxMode ? "Lọc Learner bằng AJAX" : "Lọc Learner đồng bộ";
+}
+<div class="page-title-row">
+    <div>
+        <h1>Learner List</h1>
+        <p class="subtitle">Chọn chuyên ngành để chỉ hiển thị Learner thuộc ngành đó.</p>
+    </div>
+    
+</div>
+<div class="panel">
+    <div class="panel-inner">
+        <div class="mode-switch">
+            <a asp-controller="Learner" asp-action="Index" class="mode-link @(!ajaxMode ? "active" : "")">1. Lọc đồng bộ</a>
+            <a asp-controller="Learner" asp-action="Ajax" class="mode-link @(ajaxMode ? "active" : "")">2. Lọc AJAX</a>
+        </div>
+        <h2 class="panel-heading">Chuyên ngành (Major)</h2>
+        @await Component.InvokeAsync("Major", new { ajaxMode, selectedMajorId })
+        <div class="table-meta" id="filterStatus" role="status" aria-live="polite">
+            @(ajaxMode ? "Nhấn vào ngành để lọc ngay mà không tải lại trang." : "Nhấn vào ngành để lọc và tải lại trang.")
+        </div>
+        <div id="content">
+            <partial name="LearnerTable" model="Model" />
+        </div>
+        <a asp-controller="Learner" asp-action="Create" class="btn btn-primary add-btn">Create New Student</a>
+    </div>
+</div>
+@section Scripts {
+    @if (ajaxMode)
+    {
+        <script>
+            (function () {
+                const filters = document.getElementById('majorFilters');
+                const content = document.getElementById('content');
+                const status = document.getElementById('filterStatus');
+                const endpoint = '@Url.Action("LearnerByMajorID", "Learner")';
+                let currentRequest = null;
+
+                filters.addEventListener('click', async function (event) {
+                    const link = event.target.closest('.major-filter');
+                    if (!link) return;
+                    event.preventDefault();
+                    const item = link.closest('[data-major-id]');
+                    const id = item.dataset.majorId;
+                    if (currentRequest) currentRequest.abort();
+                    currentRequest = new AbortController();
+                    const signal = currentRequest.signal;
+                    status.textContent = 'Đang tải dữ liệu...';
+                    content.setAttribute('aria-busy', 'true');
+                    try {
+                        const query = id ? '?mid=' + encodeURIComponent(id) : '';
+                        const response = await fetch(endpoint + query, {
+                            signal,
+                            headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                        });
+                        if (!response.ok) throw new Error('HTTP ' + response.status);
+                        const html = await response.text();
+                        content.innerHTML = html;
+                        filters.querySelectorAll('.major-item').forEach(x => x.classList.remove('active'));
+                        item.classList.add('active');
+                        status.textContent = id
+                            ? 'Đã lọc chuyên ngành: ' + link.textContent.trim() + ' (AJAX).'
+                            : 'Đang hiển thị tất cả Learner (AJAX).';
+                    } catch (error) {
+                        if (error.name !== 'AbortError') status.textContent = 'Không tải được dữ liệu: ' + error.message;
+                    } finally {
+                        if (!signal.aborted) content.removeAttribute('aria-busy');
+                    }
+                });
+            })();
+        </script>
+    }
+}

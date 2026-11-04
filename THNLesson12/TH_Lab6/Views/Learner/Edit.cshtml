@@ -1,0 +1,25 @@
+@model TH_Lab6.Models.Learner
+@{
+    ViewData["Title"] = "Edit Learner";
+}
+<div class="page-title-row"><div><h1>Edit Learner #@Model.LearnerID</h1><p class="subtitle">Sửa thông tin và lưu vào database School.</p></div></div>
+<div class="panel form-panel">
+    <form asp-controller="Learner" asp-action="Edit" asp-route-id="@Model.LearnerID" method="post">
+        <input type="hidden" asp-for="LearnerID" />
+        <div asp-validation-summary="All" class="validation-summary text-danger"></div>
+        <div class="form-group"><label asp-for="FirstMidName"></label>
+            <input asp-for="FirstMidName" class="form-control" />
+            <span asp-validation-for="FirstMidName" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="LastName"></label>
+            <input asp-for="LastName" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="MajorID"></label>
+            <select asp-for="MajorID" asp-items="ViewBag.MajorID" class="form-control"></select>
+            <span asp-validation-for="MajorID" class="text-danger"></span></div>
+        <div class="form-group"><label asp-for="EnrollmentDate"></label>
+            <input asp-for="EnrollmentDate" type="date" class="form-control" />
+            <span asp-validation-for="EnrollmentDate" class="text-danger"></span></div>
+        <div class="button-row"><button class="btn btn-primary" type="submit">Save Changes</button>
+            <a asp-action="Index" class="btn btn-outline">Back to List</a></div>
+    </form>
+</div>

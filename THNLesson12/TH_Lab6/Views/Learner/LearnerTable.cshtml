@@ -1,0 +1,68 @@
+@model IEnumerable<TH_Lab6.Models.Learner>
+@{
+    int totalItems = ViewBag.totalItems is int n ? n : Model.Count();
+    int pageNum = ViewBag.pageNum is int count ? count : 1;
+    int pageIndex = ViewBag.pageIndex is int index ? index : 1;
+    int pageSize = ViewBag.pageSize is int size ? size : 3;
+    int? mid = ViewBag.mid is int id ? id : null;
+    string keyword = ViewBag.keyword as string ?? "";
+    bool ajaxMode = ViewBag.AjaxMode is bool b && b;
+    string actionName = ajaxMode ? "Index" : "Sync";
+    int start = totalItems == 0 ? 0 : (pageIndex - 1) * pageSize + 1;
+    int end = Math.Min(pageIndex * pageSize, totalItems);
+}
+<div class="table-result" data-total="@totalItems" data-page="@pageIndex" data-page-count="@pageNum">
+    <div class="table-scroll">
+        <table class="table table-striped" aria-label="Danh sách người học">
+            <thead>
+                <tr>
+                    <th>Mã</th>
+                    <th>Tên</th>
+                    <th>Họ</th>
+                    <th>Ngành</th>
+                    <th>Ngày nhập học</th>
+                    <th>Chức năng</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var s in Model)
+                {
+                    <tr>
+                        <td>@s.LearnerID</td>
+                        <td>@s.FirstMidName</td>
+                        <td>@s.LastName</td>
+                        <td>@s.Major?.MajorName</td>
+                        <td>@s.EnrollmentDate.ToString("dd/MM/yyyy HH:mm")</td>
+                        <td class="action-cell">
+                            <a asp-controller="Learner" asp-action="Edit" asp-route-id="@s.LearnerID">Edit</a>
+                            <span> | </span>
+                            <a asp-controller="Learner" asp-action="Delete" asp-route-id="@s.LearnerID">Delete</a>
+                        </td>
+                    </tr>
+                }
+                @if (!Model.Any())
+                {
+                    <tr><td colspan="6" class="empty-state">Không có người học phù hợp với bộ lọc.</td></tr>
+                }
+            </tbody>
+        </table>
+    </div>
+    <div class="results-footer">
+        <span class="result-count">Hiển thị @start–@end trong tổng số @totalItems người học</span>
+        @if (pageNum > 1)
+        {
+            <nav aria-label="Phân trang Learner">
+                <ul class="pagination">
+                    @for (int i = 1; i <= pageNum; i++)
+                    {
+                        <li class="page-item @(i == pageIndex ? "active" : "")">
+                            <a asp-controller="Learner" asp-action="@actionName"
+                               asp-route-mid="@mid" asp-route-keyword="@keyword" asp-route-pageIndex="@i"
+                               class="page-link" aria-current="@(i == pageIndex ? "page" : null)">@i</a>
+                        </li>
+                    }
+                </ul>
+            </nav>
+        }
+    </div>
+</div>
