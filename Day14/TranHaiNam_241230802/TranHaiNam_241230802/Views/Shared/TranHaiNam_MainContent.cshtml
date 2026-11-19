@@ -1,0 +1,30 @@
+@model DanhSachSachViewModel
+
+<div class="section-head">
+    <h3>@Model.TieuDe</h3>
+    <a asp-controller="Home" asp-action="Create">Thêm sách mới &rsaquo;</a>
+</div>
+
+@if (Model.DanhSach.Count == 0)
+{
+    <p class="empty-message">Không có sách phù hợp.</p>
+}
+else
+{
+    <div class="grid">
+        @foreach (var sach in Model.DanhSach)
+        {
+            <div class="book-card">
+                @if (!string.IsNullOrEmpty(sach.Anh))
+                {
+                    <img src="@Url.Content("~/images/" + sach.Anh)" alt="@sach.TenSach" />
+                }
+                <h2>@sach.TenSach</h2>
+                <div class="book-foot">
+                    <span class="price">@(sach.Gia?.ToString("0"))</span>
+                    <button class="btn-buy" type="button">Thêm vào giỏ</button>
+                </div>
+            </div>
+        }
+    </div>
+}

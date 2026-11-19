@@ -1,0 +1,19 @@
+@model DanhSachSachViewModel
+@{
+    ViewData["Title"] = "Trần Hải Nam";
+}
+
+<div class="banner">
+    <img src="~/images/banner.jpg" alt="Banner" />
+</div>
+
+@if (TempData["ThongBao"] is string thongBao)
+{
+    <p class="success-message">@thongBao</p>
+}
+
+<p id="ajax-error" class="text-danger" role="status" hidden></p>
+
+<div id="book-content">
+    <partial name="TranHaiNam_MainContent" model="Model" />
+</div>

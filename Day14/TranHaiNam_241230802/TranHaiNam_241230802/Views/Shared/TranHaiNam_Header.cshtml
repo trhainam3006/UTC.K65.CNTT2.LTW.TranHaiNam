@@ -1,0 +1,45 @@
+@model IEnumerable<TheLoai>
+@{
+    var maTL = Context.Request.Query["maTL"].ToString();
+}
+
+<header class="header">
+    <div class="topbar">
+        <div class="container">
+            <span>Hotline: <b>1900 6789</b> &nbsp;|&nbsp; Miễn phí vận chuyển đơn từ 300.000đ</span>
+            <span>Đăng nhập &nbsp;|&nbsp; Đăng ký</span>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <a asp-controller="Home" asp-action="Index">
+                <img src="~/images/logo.png" alt="BookHub" />
+            </a>
+            <div class="cart-box">Giỏ hàng: 0 sản phẩm - 0đ</div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="menu">
+                <li class="@(string.IsNullOrEmpty(maTL) ? "active" : "")">
+                    <a asp-controller="Home" asp-action="Index" class="js-filter"
+                       data-url="@Url.Action("LocSach", "Home")">Trần Hải Nam</a>
+                </li>
+                @foreach (var item in Model)
+                {
+                    <li class="@(maTL == item.MaTL.ToString() ? "active" : "")">
+                        <a asp-controller="Home" asp-action="Index" asp-route-maTL="@item.MaTL"
+                           class="js-filter"
+                           data-url="@Url.Action("LocSach", "Home", new { maTL = item.MaTL })">
+                            @item.TenTL
+                        </a>
+                    </li>
+                }
+            </ul>
+            <form class="search-box">
+                <input type="text" placeholder="Tìm sách..." />
+                <button type="button">Tìm</button>
+            </form>
+        </div>
+    </nav>
+</header>

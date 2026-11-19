@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - BookHub</title>
+    <link href="~/css/layout.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/style.css" rel="stylesheet" asp-append-version="true" />
+    <link href="~/css/exam.css" rel="stylesheet" asp-append-version="true" />
+</head>
+<body>
+    @await Component.InvokeAsync("TranHaiNam_Header")
+
+    <main class="main">
+        <div class="container">
+            @RenderBody()
+        </div>
+    </main>
+
+    <partial name="TranHaiNam_Footer" />
+
+    <div class="to-top">&uarr;</div>
+    <script src="~/js/jquery.min.js"></script>
+    <script src="~/js/main.js" asp-append-version="true"></script>
+    <script src="~/js/sach.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

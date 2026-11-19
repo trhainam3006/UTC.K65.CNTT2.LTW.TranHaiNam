@@ -1,0 +1,12 @@
+.text-danger{color:#b42318;display:block;font-size:14px;margin-top:4px}
+.text-danger:empty,.validation-summary-valid{display:none}
+.input-validation-error{border-color:#b42318!important}
+.create-form{background:#fff;padding:22px;border-radius:8px;max-width:480px}
+.form-group{margin-bottom:16px}
+.form-group label{display:block;margin-bottom:5px;font-weight:600}
+.form-group input,.form-group select{width:100%;padding:9px 10px;border:1px solid #b7c8cf;border-radius:4px;font:inherit}
+.form-group small{display:block;margin-top:5px;color:#596c72}
+.back-link{display:inline-block;margin-left:12px;color:#125e6e}
+.success-message{padding:12px;background:#e5f5eb;color:#146334;border-radius:5px}
+.empty-message{padding:20px;background:#fff;border-radius:6px}
+.text-danger[hidden]{display:none}

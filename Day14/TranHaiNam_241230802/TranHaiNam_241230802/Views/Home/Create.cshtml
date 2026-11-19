@@ -1,0 +1,47 @@
+@model ThemSachViewModel
+@{
+    ViewData["Title"] = "Thêm sách mới";
+}
+
+<div class="section-head">
+    <h3>Trần Hải Nam - Thêm sách mới</h3>
+</div>
+
+<form asp-controller="Home" asp-action="Create" method="post" class="create-form">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+    <div class="form-group">
+        <label asp-for="MaTL"></label>
+        <select asp-for="MaTL" asp-items="ViewBag.TheLoai">
+            <option value="">-- Chọn thể loại --</option>
+        </select>
+        <span asp-validation-for="MaTL" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="TenSach"></label>
+        <input asp-for="TenSach" />
+        <span asp-validation-for="TenSach" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Gia"></label>
+        <input asp-for="Gia" type="text" inputmode="numeric"
+               data-val-number="Giá phải là số." />
+        <span asp-validation-for="Gia" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Anh"></label>
+        <input asp-for="Anh" placeholder="Img_1.jpg" />
+        <span asp-validation-for="Anh" class="text-danger"></span>
+        <small>Nhập tên ảnh đã có trong wwwroot/images, ví dụ Img_1.jpg.</small>
+    </div>
+
+    <button type="submit" class="btn-buy">Create</button>
+    <a asp-controller="Home" asp-action="Index" class="back-link">Về trang chủ</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
