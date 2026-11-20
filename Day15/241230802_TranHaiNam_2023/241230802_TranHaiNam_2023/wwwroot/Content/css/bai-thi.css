@@ -1,0 +1,10 @@
+.see a + a { margin-left: 1rem; }
+.khung-them { max-width: 28rem; margin: 1rem 0; }
+.khung-them h2 { font-size: 1.35rem; margin: .5rem 0 1rem; }
+.khung-them form > div { margin-bottom: .8rem; }
+.khung-them label, .khung-them .field-validation-error { display: block; }
+.khung-them input, .khung-them select { padding: .35rem; max-width: 100%; }
+.khung-them button { padding: .35rem .8rem; cursor: pointer; }
+.khung-them a { margin-left: .7rem; }
+.field-validation-error, #loi-loc { color: #a51422; }
+[role="status"] { color: #17643d; margin: .6rem 0; }

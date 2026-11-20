@@ -1,0 +1,36 @@
+@model IEnumerable<HangHoa>
+<div class="content_top">
+    <div class="heading"><h3>@ViewBag.TieuDe</h3></div>
+    <div class="see">
+        <p>
+            <a asp-controller="Home" asp-action="Create">Thêm hàng hóa mới</a>
+            <a asp-controller="Home" asp-action="Index">See all Products</a>
+        </p>
+    </div>
+    <div class="clear"></div>
+</div>
+
+@if (!Model.Any())
+{
+    <p>Chưa có hàng hóa phù hợp.</p>
+}
+<div class="section group">
+    @foreach (var hang in Model)
+    {
+        var anh = hang.Anh == "img_2.jpg" ? "Img_2.jpg" : hang.Anh;
+        <div class="grid_1_of_4 images_1_of_4">
+            @if (!string.IsNullOrWhiteSpace(anh))
+            {
+                <img src="@Url.Content("~/Content/images/" + Uri.EscapeDataString(anh))" alt="@hang.TenHang" />
+            }
+            <h2>@hang.TenHang</h2>
+            <div class="price-details">
+                <div class="price-number">
+                    <p><span class="rupees">@hang.Gia?.ToString("0")</span></p>
+                </div>
+                <div class="add-cart"><h4><a aria-disabled="true">Add to Cart</a></h4></div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    }
+</div>

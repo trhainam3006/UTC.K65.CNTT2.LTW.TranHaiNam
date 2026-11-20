@@ -1,0 +1,12 @@
+@model IEnumerable<HangHoa>
+@{
+    ViewData["Title"] = "Hàng hóa";
+}
+@if (TempData["ThongBao"] is string thongBao)
+{
+    <p role="status">@thongBao</p>
+}
+<p id="loi-loc" role="alert" hidden>Chưa tải được danh sách. Hãy bấm lại loại hàng.</p>
+<div id="ket-qua">
+    <partial name="TranHaiNam_MainContent" model="Model" />
+</div>

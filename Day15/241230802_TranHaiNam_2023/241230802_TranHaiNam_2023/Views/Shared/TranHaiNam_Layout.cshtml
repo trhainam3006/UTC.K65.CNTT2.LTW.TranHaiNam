@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"] - Home Shoppe</title>
+    <link href="~/Content/css/style.css" rel="stylesheet" />
+    <link href="~/Content/css/bai-thi.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrap">
+        @await Component.InvokeAsync("TranHaiNam_Header")
+        <div class="main">
+            <div class="content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+    <partial name="TranHaiNam_Footer" />
+    <script src="~/Script/loc-hang.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

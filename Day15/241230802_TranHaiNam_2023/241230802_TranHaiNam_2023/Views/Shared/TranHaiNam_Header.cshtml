@@ -1,0 +1,45 @@
+@model IEnumerable<LoaiHang>
+@{
+    var maDangChon = Context.Request.Query["maLoai"].ToString();
+}
+<div class="header">
+    <div class="header_top">
+        <div class="logo">
+            <a asp-controller="Home" asp-action="Index"><img src="~/Content/images/logo.png" alt="Home Shoppe" /></a>
+        </div>
+        <div class="cart">
+            <p>Welcome to our Online Store! <span>Cart:</span></p>
+            <div id="dd" class="wrapper-dropdown-2">0 item(s) - $0.00
+                <ul class="dropdown">
+                    <li>you have no items in your Shopping cart</li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="header_bottom">
+        <div class="menu">
+            <ul>
+                <li class="@(string.IsNullOrEmpty(maDangChon) ? "active" : "")">
+                    <a asp-controller="Home" asp-action="Index"
+                       data-url="@Url.Action("LocTheoLoai", "Home")">Trần Hải Nam</a>
+                </li>
+                @foreach (var loai in Model)
+                {
+                    <li class="@(maDangChon == loai.MaLoai.ToString() ? "active" : "")">
+                        <a asp-controller="Home" asp-action="Index" asp-route-maLoai="@loai.MaLoai"
+                           data-url="@Url.Action("LocTheoLoai", "Home", new { maLoai = loai.MaLoai })">@loai.TenLoai</a>
+                    </li>
+                }
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="search_box">
+            <form role="search">
+                <input type="text" placeholder="Search" aria-label="Search" />
+                <input type="button" value="" aria-label="Search" />
+            </form>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
