@@ -1,0 +1,26 @@
+@model IEnumerable<TaiSan>
+
+<div class="section-head">
+    <h3>@ViewBag.TieuDe</h3>
+    <a asp-controller="Home" asp-action="Create">Thêm tài sản mới</a>
+</div>
+<div class="grid">
+    @foreach (var ts in Model)
+    {
+        <div class="asset-card">
+            @if (!string.IsNullOrWhiteSpace(ts.Anh))
+            {
+                <img src="~/images/@ts.Anh" alt="@ts.TenTS" />
+            }
+            <h2>@ts.TenTS</h2>
+            <div class="asset-foot">
+                <span class="price">@ts.NguyenGia?.ToString("0") tr</span>
+                <details class="thong-tin"><summary class="btn-buy">Chi tiết</summary><span>Mã tài sản: @ts.MaTS</span></details>
+            </div>
+        </div>
+    }
+</div>
+@if (!Model.Any())
+{
+    <p>Chưa có tài sản phù hợp.</p>
+}

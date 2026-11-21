@@ -1,0 +1,39 @@
+@model IEnumerable<LoaiTaiSan>
+@{
+    int? maDangChon = int.TryParse(Context.Request.Query["maLoai"], out var ma) ? ma : null;
+}
+<!-- Begin Header -->
+<header class="header">
+    <div class="topbar">
+        <div class="container">
+            <span>Phòng Hành chính - Quản trị: <b>(024) 3999 8888</b> &nbsp;|&nbsp; Hỗ trợ: taisan@assethub.vn</span>
+            <span>Xin chào, Quản trị viên &nbsp;|&nbsp; Đăng xuất</span>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container">
+            <a asp-controller="Home" asp-action="Index"><img src="~/images/logo.png" alt="AssetHub" /></a>
+            <div class="cart-box">Tổng tài sản: @ViewBag.TongTaiSan - Nguyên giá: @ViewBag.TongGia triệu</div>
+        </div>
+    </div>
+    <nav class="navbar">
+        <div class="container">
+            <ul class="menu">
+                <li class="@(maDangChon == null ? "active" : null)">
+                    <a asp-controller="Home" asp-action="Index">Trần Hải Nam</a>
+                </li>
+                @foreach (var loai in Model)
+                {
+                    <li class="@(maDangChon == loai.MaLoai ? "active" : null)">
+                        <a asp-controller="Home" asp-action="Index" asp-route-maLoai="@loai.MaLoai">@loai.TenLoai</a>
+                    </li>
+                }
+            </ul>
+            <form class="search-box">
+                <input type="text" placeholder="Tìm tài sản..." />
+                <button type="button">Tìm</button>
+            </form>
+        </div>
+    </nav>
+</header>
+<!-- End Header -->

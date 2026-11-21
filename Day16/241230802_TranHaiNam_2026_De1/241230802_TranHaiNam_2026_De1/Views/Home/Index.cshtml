@@ -1,0 +1,9 @@
+@model IEnumerable<TaiSan>
+
+@if (TempData["ThongBao"] is string thongBao)
+{
+    <p class="thong-bao" role="status">@thongBao</p>
+}
+<div id="danh-sach" aria-live="polite">
+    <partial name="TranHaiNam_MainContent" model="Model" />
+</div>

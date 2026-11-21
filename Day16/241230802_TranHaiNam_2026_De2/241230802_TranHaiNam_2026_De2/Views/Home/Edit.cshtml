@@ -1,0 +1,39 @@
+@model TaiSanForm
+
+<div class="khung-form">
+    <h2>Sửa thông tin tài sản</h2>
+    <form asp-controller="Home" asp-action="Edit" asp-route-id="@Model.MaTS" method="post">
+        <div class="dong-form">
+            <label asp-for="MaLoai"></label>
+            <div>
+                <select asp-for="MaLoai" asp-items="ViewBag.CacLoai"><option value="">Chọn loại tài sản</option></select>
+                <span asp-validation-for="MaLoai"></span>
+            </div>
+        </div>
+        <div class="dong-form">
+            <label asp-for="TenTS"></label>
+            <div>
+                <input asp-for="TenTS" />
+                <span asp-validation-for="TenTS"></span>
+            </div>
+        </div>
+        <div class="dong-form">
+            <label asp-for="NguyenGia"></label>
+            <div>
+                <input asp-for="NguyenGia" type="text" inputmode="numeric" />
+                <span asp-validation-for="NguyenGia"></span>
+            </div>
+        </div>
+        <div class="dong-form">
+            <label asp-for="Anh"></label>
+            <div>
+                <input asp-for="Anh" />
+                <span asp-validation-for="Anh"></span>
+            </div>
+        </div>
+        <div class="nut-form">
+            <button class="btn-buy" type="submit">Save</button>
+            <a asp-action="Index">Về trang chủ</a>
+        </div>
+    </form>
+</div>

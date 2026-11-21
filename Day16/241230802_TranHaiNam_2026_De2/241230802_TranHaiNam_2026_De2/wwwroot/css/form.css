@@ -1,0 +1,22 @@
+.khung-form {
+    max-width: 640px;
+    margin: 20px auto;
+    padding: 26px 30px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px #142c5224;
+}
+.khung-form h2 { margin-bottom: 14px; color: #1d3f72; font-size: 20px; text-transform: uppercase; }
+.dong-form, .nut-form { display: grid; grid-template-columns: 128px minmax(0, 1fr); gap: 12px; margin: 12px 0; }
+.dong-form label { align-self: start; padding-top: 5px; font-weight: 600; }
+.dong-form input, .dong-form select { width: 100%; padding: 7px 9px; border: 1px solid #b8c9d2; border-radius: 4px; font: inherit; }
+.dong-form .field-validation-error { display: block; margin-top: 3px; color: #a42923; font-size: 14px; }
+.dong-form .input-validation-error { border-color: #bb3c30; }
+.nut-form { display: flex; align-items: center; padding-left: 140px; }
+.nut-form a { color: #1d3f72; text-decoration: underline; }
+.thong-bao { margin-top: 14px; color: #1f614f; }
+@media (max-width: 580px) {
+    .khung-form { padding: 16px; }
+    .dong-form { grid-template-columns: 1fr; gap: 3px; }
+    .nut-form { padding-left: 0; }
+}
